@@ -6,7 +6,7 @@ module.exports = {
 			require('css-prefers-color-scheme/postcss'),
 		]
 	},
-	title: 'MTVehicles'
+	title: 'MTVehicles',
 	head: [
 		['link', { rel: 'icon', href: '/mtwapens.png' }]
 	],
