@@ -21,7 +21,7 @@ module.exports = {
 		],
 		sidebar: [
 			{
-				title: 'MTVehicles',
+				title: 'MTVehicles V1',
 				collapsable: false,
 				children: [
 					'/',
