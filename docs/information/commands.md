@@ -1,5 +1,9 @@
 # **Commands & Permissions**
 
+::: tip
+Is something not quite clear? Feel free to ask in our Discord server: [https://discord.gg/vehicle](https://discord.gg/vehicle) !
+:::
+
 ## Main commands
 
 | Command           | Description                                       | permission                                       |
