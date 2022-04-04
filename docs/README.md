@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# Welcome to MTVehicles wiki!
+## Welcome to MTVehicles wiki!
 _The place to answer all your questions about MTV! 😉_
 
 <a href="https://www.spigotmc.org/resources/80910/"><img alt="Wiki Version" src="https://img.shields.io/badge/wiki--version-v2.3.0-yellow"></a>
