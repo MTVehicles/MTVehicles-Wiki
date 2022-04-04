@@ -25,13 +25,15 @@ module.exports = {
 				collapsable: false,
 				children: [
 					'/',
+					'/faq.md',
+					'/translating.md',
 				]
 			},
 			{
-				title: 'Test',
+				title: 'Api',
 				collapsable: false,
 				children: [
-					'/',
+					'/api',
 				]
 			}
 		]
