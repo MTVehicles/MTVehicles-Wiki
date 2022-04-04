@@ -9,7 +9,7 @@ module.exports = {
 	title: 'MTVehicles',
 	description: 'Wiki of MTVehicles',
 	head: [
-		['link', { rel: 'icon', href: '/mtwapens.png' }],
+		['link', { rel: 'icon', href: 'https://www.spigotmc.org/data/resource_icons/80/80910.jpg' }],
 		['meta', {name: 'theme-color', content: '#25272a'}]
 	],
 	theme: "yuu",
