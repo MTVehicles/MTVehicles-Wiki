@@ -4,6 +4,7 @@ module.exports = {
 	postcss: {
 		plugins: [
 			require('css-prefers-color-scheme/postcss'),
+			require('autoprefixer')
 		]
 	},
 	title: 'MTVehicles',
@@ -12,7 +13,7 @@ module.exports = {
 		['meta', {name: 'theme-color', content: '#25272a'}],
 		['link', { rel: 'icon', href: '/mtwapens.png' }]
 	],
-	theme: "default-prefers-color-scheme",
+	theme: "yuu",
 	themeConfig: {
 		logo: '/mtwapens.png',
 		nav: [
