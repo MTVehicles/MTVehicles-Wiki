@@ -18,8 +18,8 @@ module.exports = {
 		yuu: {
 			defaultDarkTheme: true,
 			disableThemeIgnore: true,
-			colorThemes: ['green'],
-			defaultColorTheme: 'green',
+			colorThemes: ['#32a852'],
+			defaultColorTheme: '#32a852',
 		},
 		searchPlaceholder: 'Search...',
 		repo: 'gamerjoep/mtvehicles-wiki',
