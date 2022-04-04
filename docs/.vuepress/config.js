@@ -9,7 +9,8 @@ module.exports = {
 	title: 'MTVehicles',
 	description: 'Wiki of MTVehicles',
 	head: [
-		['link', { rel: 'icon', href: '/mtwapens.png' }]
+		['link', { rel: 'icon', href: '/mtwapens.png' }],
+		['meta', {name: 'theme-color', content: '#25272a'}]
 	],
 	theme: "yuu",
 	themeConfig: {
