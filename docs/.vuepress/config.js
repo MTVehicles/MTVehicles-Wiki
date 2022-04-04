@@ -15,6 +15,7 @@ module.exports = {
 	theme: "yuu",
 	themeConfig: {
 		yuu: {
+			defaultDarkTheme: true,
 			disableThemeIgnore: true,
 		},
 		logo: 'https://www.spigotmc.org/data/resource_icons/80/80910.jpg',
