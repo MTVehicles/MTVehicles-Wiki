@@ -11,7 +11,7 @@ module.exports = {
 	head: [
 		['link', { rel: 'icon', href: '/mtwapens.png' }]
 	],
-	theme: "yuu",
+	theme: "default-prefers-color-scheme",
 	themeConfig: {
 		logo: '/mtwapens.png',
 		nav: [
