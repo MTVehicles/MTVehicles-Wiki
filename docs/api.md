@@ -3,7 +3,7 @@
 
 De developer API is beschikbaar via jitpack.io. Om deze te gebruiken moet je dit toevoegen aan je pom.xml of build.gradle bestand:
 
-## Maven
+## Mavenhhhhh
 ::: details Maven
 ```xml
 	<repositories>
