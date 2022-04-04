@@ -37,7 +37,9 @@ module.exports = {
 				title: 'Information',
 				collapsable: false,
 				children: [
-					'/commands/cmd.md',
+					'/information/commands.md',
+					'/information/functionalities.md',
+					'/information/softdependencies.md',
 				]
 			},
 			{
