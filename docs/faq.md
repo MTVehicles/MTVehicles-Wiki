@@ -1,4 +1,4 @@
-# Faq
+# FAQ, Frequent Errors
 
 ### 1. How to download and set up the plugin?
 For a step-by-step tutorial, [click here](https://github.com/GamerJoep/MinetopiaVehicles#how-to-download).
