@@ -6,21 +6,20 @@ module.exports = {
 			require('css-prefers-color-scheme/postcss'),
 		]
 	},
-	title: 'MT-Wapens',
-	description: 'De officiële MT-Wapens V3 documentation.',
+	title: 'MTVehicles'
 	head: [
 		['link', { rel: 'icon', href: '/mtwapens.png' }]
 	],
-	theme: "yuu",
+	theme: "default-prefers-color-scheme",
 	themeConfig: {
 		logo: '/mtwapens.png',
 		nav: [
-			{ text: 'Discord', link: 'https://discord.gg/AvRpCUZ' },
-			{ text: 'Admin Panel', link: 'https://dash.mtwapens.nl' }
+			{ text: 'Discord', link: 'https://discord.gg/vehicle' },
+			{ text: 'Site', link: 'https://mtvehicles.eu' }
 		],
 		sidebar: [
 			{
-				title: 'MT-Wapens V3',
+				title: 'MTVehicles',
 				collapsable: false,
 				children: [
 					'/',
