@@ -25,18 +25,13 @@ module.exports = {
 				collapsable: false,
 				children: [
 					'/',
-					'/commands/commands',
-					'/api.md'
 				]
 			},
 			{
-				title: 'Configuration',
+				title: 'Test',
 				collapsable: false,
 				children: [
-					'/config/config',
-					'/config/weapons',
-					'/config/ammo',
-					'/config/grenades',
+					'/',
 				]
 			}
 		]
