@@ -1,5 +1,6 @@
 // .vuepress/config.js
 module.exports = {
+	cname: 'wiki.mtvehicles.eu',
 	base: '/',
 	postcss: {
 		plugins: [
@@ -17,7 +18,7 @@ module.exports = {
 		yuu: {
 			defaultDarkTheme: true,
 			disableThemeIgnore: true,
-			colorThemes: ['purple'],
+			defaultColorTheme: 'purple',
 		},
 		logo: 'https://www.spigotmc.org/data/resource_icons/80/80910.jpg',
 		nav: [
