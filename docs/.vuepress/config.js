@@ -13,6 +13,9 @@ module.exports = {
 		['meta', {name: 'theme-color', content: '#25272a'}]
 	],
 	theme: "yuu",
+	yuu: {
+            defaultDarkTheme: true,
+        },
 	themeConfig: {
 		logo: 'https://www.spigotmc.org/data/resource_icons/80/80910.jpg',
 		nav: [
