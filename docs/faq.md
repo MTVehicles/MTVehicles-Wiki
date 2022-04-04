@@ -1,11 +1,11 @@
 # FAQ, Frequent Errors
 
-### 1. How to download and set up the plugin?
+## 1. How to download and set up the plugin?
 For a step-by-step tutorial, [click here](https://github.com/GamerJoep/MinetopiaVehicles#how-to-download).
 
 ---
 
-### 2. How to get a vehicle?
+## 2. How to get a vehicle?
 - Execute `/mtv menu` and choose from dozens of vehicles!
 
   > ⚠ Permission `mtvehicles.menu` necessary.
@@ -19,7 +19,7 @@ For a step-by-step tutorial, [click here](https://github.com/GamerJoep/Minetopia
 
 ---
 
-### 3. How to get rid of a vehicle?
+## 3. How to get rid of a vehicle?
 Shift and Right-click the vehicle to pick it up.
 > ⚠ You must OWN the vehicle or have the permission `mtvehicles.oppakken`.
 
@@ -28,7 +28,7 @@ Shift and Right-click the vehicle to pick it up.
 
 ---
 
-### 4. I am getting 'An internal error occurred...' error
+## 4. I am getting 'An internal error occurred...' error
 Firstly, **check your console** and look for **this message** (time may be different, of course):
 
 ![image](https://user-images.githubusercontent.com/47473562/161583020-5b4eea98-16b6-44a5-993e-c53b740df610.png)
@@ -51,7 +51,7 @@ This means you're using an **incompatible Minecraft version**. We always support
 
 ---
 
-### 5. How to create a vehicle shop?
+## 5. How to create a vehicle shop?
 We do not offer such a feature, however, you can achieve the same goal by installing any shop plugin out there.
 
 - If you want to use **commands**, use `/mtv givecar <player> <UUID>`. (Explained [here](#2-how-to-get-a-vehicle).)
