@@ -34,6 +34,13 @@ module.exports = {
 				]
 			},
 			{
+				title: 'Information',
+				collapsable: false,
+				children: [
+					'/commands/cmd',
+				]
+			},
+			{
 				title: 'Api',
 				collapsable: false,
 				children: [
