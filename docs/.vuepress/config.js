@@ -14,7 +14,7 @@ module.exports = {
 	],
 	theme: "yuu",
 	themeConfig: {
-		logo: '/mtwapens.png',
+		logo: 'https://www.spigotmc.org/data/resource_icons/80/80910.jpg',
 		nav: [
 			{ text: 'Discord', link: 'https://discord.gg/vehicle' },
 			{ text: 'Site', link: 'https://mtvehicles.eu' }
