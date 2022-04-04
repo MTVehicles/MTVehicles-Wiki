@@ -43,7 +43,7 @@ module.exports = {
 				]
 			},
 			{
-				title: 'Api',
+				title: 'Placeholders',
 				collapsable: false,
 				children: [
 					'/api',
