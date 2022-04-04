@@ -37,7 +37,7 @@ module.exports = {
 				title: 'Information',
 				collapsable: false,
 				children: [
-					'/commands/cmd',
+					'/commands/cmd.md',
 				]
 			},
 			{
