@@ -32,17 +32,17 @@ module.exports = {
 				collapsable: false,
 				children: [
 					'/',
-					'/faq.md',
 					'/translating.md',
+					'/faq.md',
 				]
 			},
 			{
 				title: 'Information',
 				collapsable: false,
 				children: [
-					'/information/commands.md',
 					'/information/functionalities.md',
 					'/information/softdependencies.md',
+					'/information/commands.md',
 				]
 			},
 			{
