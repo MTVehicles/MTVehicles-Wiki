@@ -17,6 +17,7 @@ module.exports = {
 		yuu: {
 			defaultDarkTheme: true,
 			disableThemeIgnore: true,
+			colorThemes: ['purple'],
 		},
 		logo: 'https://www.spigotmc.org/data/resource_icons/80/80910.jpg',
 		nav: [
