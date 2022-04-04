@@ -25,6 +25,16 @@ module.exports = {
 		repo: 'gamerjoep/mtvehicles-wiki',
    		repoLabel: 'Contribute',
 		logo: 'https://www.spigotmc.org/data/resource_icons/80/80910.jpg',
+		editLinks: true,
+    		nextLinks: true,
+		editLinkText: 'Edit this page on GitHub',
+		lastUpdated: 'Last updated',
+		serviceWorker: {
+		  updatePopup: {
+		    message: "New content is available.",
+		    buttonText: "Refresh"
+		  }
+		},
 		nav: [
 			{ text: 'Discord', link: 'https://discord.gg/vehicle' },
 			{ text: 'Site', link: 'https://mtvehicles.eu' }
