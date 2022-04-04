@@ -1,4 +1,4 @@
-# Start
+# Startt
 Met deze plugin is het mogelijk om wapens, ammo en grenades toe te voegen aan jouw Minecraft server! Hiervoor heb je de [Minetopia Texturepack](https://texturepacks.dusdavidgames.nl/Minetopia_v1.12_Latest.zip) nodig om de juiste textures en models te zien. Heb je extra hulp nodig? Voel je vrij om onze [discord](https://discord.gg/AvRpCUZ) te joinen.
 
 ## Installatie
