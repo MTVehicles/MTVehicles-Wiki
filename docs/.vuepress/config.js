@@ -7,6 +7,7 @@ module.exports = {
 		]
 	},
 	title: 'MTVehicles',
+	description: 'Wiki of MTVehicles',
 	head: [
 		['link', { rel: 'icon', href: '/mtwapens.png' }]
 	],
