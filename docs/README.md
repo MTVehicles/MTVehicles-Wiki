@@ -1,6 +1,6 @@
-<div align="center">
-
 # Home
+  
+<div align="center">  
   
   <br>
 
@@ -15,7 +15,7 @@
   
 </div>
 
-<br>
+---
 
 ## Contact us!
 
