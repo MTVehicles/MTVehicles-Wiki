@@ -1,11 +1,20 @@
 # FAQ, Frequent Errors
 
+First of all, you need **a Minecraft server** with Spigot/Paper. (No, plugins do NOT work locally.)
+
 ## 1. How to download and set up the plugin?
 For a step-by-step tutorial, [click here](https://github.com/GamerJoep/MinetopiaVehicles#how-to-download).
 
 ---
 
-## 2. How to get a vehicle?
+## 2. I can only see diamond hoes!
+You need our **resource pack** to be able to see the vehicles. Download it [here](https://mtvehicles.nl/rp/).
+
+> ⚠ As of version 2.4.0-pre1, a new version of resource pack (v0.2) is required. Before the release of 2.4.0, it is available exclusively to our [patreons](https://patreon.com/mtvehicles).
+
+---
+
+## 3. How to get a vehicle?
 - Execute `/mtv menu` and choose from dozens of vehicles!
 
   > ⚠ Permission `mtvehicles.menu` necessary.
@@ -19,7 +28,7 @@ For a step-by-step tutorial, [click here](https://github.com/GamerJoep/Minetopia
 
 ---
 
-## 3. How to get rid of a vehicle?
+## 4. How to get rid of a vehicle?
 Shift and Right-click the vehicle to pick it up.
 > ⚠ You must OWN the vehicle or have the permission `mtvehicles.oppakken`.
 
@@ -28,13 +37,13 @@ Shift and Right-click the vehicle to pick it up.
 
 ---
 
-## 4. I am getting 'An internal error occurred...' error
+## 5. I am getting 'An internal error occurred...' error
 Firstly, **check your console** and look for **this message** (time may be different, of course):
 
-![image](https://user-images.githubusercontent.com/47473562/161583020-5b4eea98-16b6-44a5-993e-c53b740df610.png)
+![Plugin is disabled](https://user-images.githubusercontent.com/47473562/161583020-5b4eea98-16b6-44a5-993e-c53b740df610.png)
 
 > And if you're attentive, you should have already seen this warning:<br>
-> ![image](https://user-images.githubusercontent.com/47473562/161582673-4802aff9-6e82-41fc-85e3-9f187f760e19.png)
+> ![Incompatible version](https://user-images.githubusercontent.com/47473562/161582673-4802aff9-6e82-41fc-85e3-9f187f760e19.png)
 
 This means you're using an **incompatible Minecraft version**. We always support the **latest patch versions**, except 1.14.x:
 
@@ -51,7 +60,20 @@ This means you're using an **incompatible Minecraft version**. We always support
 
 ---
 
-## 5. How to create a vehicle shop?
+## 6. The vehicles do not move. I am using a compatible version of Paper.
+
+You need to open the `paper.yml` file and set `armor-stand-tick: true`.
+
+---
+
+## 7. I've got lags. Is the plugin too demanding?
+In case you're using Aternos, then you're probably right. As their servers are free, they might not be "beefy enough".
+
+If you have your own server, try **allocating more RAM**.
+
+---
+
+## 8. How to create a vehicle shop?
 We do not offer such a feature, however, you can achieve the same goal by installing any shop plugin out there.
 
 - If you want to use **commands**, use `/mtv givecar <player> <UUID>`. (Explained [here](#2-how-to-get-a-vehicle).)

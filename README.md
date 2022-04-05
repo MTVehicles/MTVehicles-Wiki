@@ -1,5 +1,3 @@
-# Documentation
+# MTVehicles Wiki
 
-
-## Credits:
-https://github.com/MT-Wapens/documentation/
+https://wiki.mtvehicles.eu/

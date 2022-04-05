@@ -22,11 +22,11 @@ module.exports = {
 			defaultColorTheme: '#32a852',
 		},
 		searchPlaceholder: 'Search...',
-		repo: 'gamerjoep/mtvehicles-wiki',
+		repo: 'GamerJoep/MTVehicles',
    		repoLabel: 'Contribute',
 		logo: 'https://www.spigotmc.org/data/resource_icons/80/80910.jpg',
-		editLinks: true,
-    		nextLinks: true,
+		editLinks: false,
+    	nextLinks: true,
 		editLinkText: 'Edit this page on GitHub',
 		lastUpdated: 'Last updated',
 		serviceWorker: {
@@ -37,11 +37,11 @@ module.exports = {
 		},
 		nav: [
 			{ text: 'Discord', link: 'https://discord.gg/vehicle' },
-			{ text: 'Site', link: 'https://mtvehicles.eu' }
+			{ text: 'Website', link: 'https://mtvehicles.eu' }
 		],
 		sidebar: [
 			{
-				title: 'MTVehicles V1',
+				title: 'MTVehicles v2.3.0',
 				collapsable: false,
 				children: [
 					'/',
@@ -54,15 +54,16 @@ module.exports = {
 				collapsable: false,
 				children: [
 					'/information/functionalities.md',
-					'/information/softdependencies.md',
 					'/information/commands.md',
+					'/information/softdependencies.md',
+					'/information/placeholders.md',
 				]
 			},
 			{
-				title: 'Placeholders',
+				title: 'API',
 				collapsable: false,
 				children: [
-					'/api',
+					'/api/start.md',
 				]
 			}
 		]

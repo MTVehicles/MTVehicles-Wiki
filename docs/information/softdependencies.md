@@ -1,4 +1,4 @@
-# **Softdependencies**
+# Softdependencies
 
 ## WorldGuard
 
@@ -27,8 +27,10 @@ You can download <a href="https://www.spigotmc.org/resources/vault.34315/">Vault
 
 Options concerning Vault and prices are to be found in the config.yml.
 
-<div align="right">
-  <sub>README.md by <a href="https://github.com/Zettovec">Nikd0</a> & <a href="https://github.com/Jeffrey-H">Jeffrey-H</a></sub>
-</div>
+### PlaceholderAPI ![](https://img.shields.io/badge/since-v2.4.0-green)
+
+MTVehicles offers special placeholders for you to use if you have PAPI installed.
+
+We've made a [separate page](https://wiki.mtvehicles.eu/information/placeholders.html) for them.
 
 [config.yml]: https://github.com/GamerJoep/MinetopiaVehicles/blob/master/src/main/resources/config.yml
