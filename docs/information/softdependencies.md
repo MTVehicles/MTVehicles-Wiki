@@ -27,7 +27,8 @@ You can download <a href="https://www.spigotmc.org/resources/vault.34315/">Vault
 
 Options concerning Vault and prices are to be found in the config.yml.
 
-### PlaceholderAPI ![](https://img.shields.io/badge/since-v2.4.0-green)
+### PlaceholderAPI
+![](https://img.shields.io/badge/since-v2.4.0-green)
 
 MTVehicles offers special placeholders for you to use if you have PAPI installed.
 
