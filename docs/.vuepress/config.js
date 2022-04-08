@@ -60,6 +60,13 @@ module.exports = {
 				]
 			},
 			{
+				title: 'Tutorials',
+				collapsable: false,
+				children: [
+					'/tutorials/fuel.md',
+				]
+			},
+			{
 				title: 'API',
 				collapsable: false,
 				children: [
