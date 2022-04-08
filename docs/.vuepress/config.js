@@ -38,7 +38,6 @@ plugins:
 			defaultColorTheme: '#32a852',
 		},
 		searchPlaceholder: 'Search...',
-		repo: 'GamerJoep/MTVehicles-Wiki',
    		repoLabel: 'Contribute',
 		logo: 'https://www.spigotmc.org/data/resource_icons/80/80910.jpg',
 		editLinks: true,
