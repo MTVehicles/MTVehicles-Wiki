@@ -1,5 +1,5 @@
 # Placeholders
-![](https://img.shields.io/badge/since-v2.4.0-green)
+![](https://img.shields.io/badge/since-v2.4.0--pre1-green)
 
 If you have PlaceholderAPI installed and enabled as a soft-dependency, you may use these placeholders:
 

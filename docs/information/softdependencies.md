@@ -4,11 +4,15 @@
 
 You can download <a href="https://dev.bukkit.org/projects/worldguard">WorldGuard</a> to get access to custom features with regions. (Do not forget that WorldGuard needs WorldEdit as its dependency.)
 
-> ⚠ WorldGuard features are not supported on 1.12.2 as it is no longer maintained and uses older API version.
+::: danger
+WorldGuard features are not supported on 1.12.2 as it is no longer maintained and uses older API version.
+:::
 
 You can edit the behaviour **in the config** where you may also find information how to set up the custom flags.
 
-> ⚠ WorldGuard features are disabled by default and have to be enabled in the config.
+::: warning
+WorldGuard features are disabled by default and have to be enabled in the config.
+:::
 
 | Custom flags     | State | Description                                                                                    |
 |------------------|-------|------------------------------------------------------------------------------------------------|

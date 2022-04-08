@@ -17,13 +17,21 @@ This method is far more difficult, thus **you should not do it unless** you comp
 
 1. Create your own `messages_xx.yml` file in the `/plugins/MTVehicles/messages/` folder. (E.g. by copying an existing message file and editing the messages)
 
-  > ⚠ Bear in mind, your final file **must end with `.yml`**! (.txt or other files will NOT work!)
+  ::: danger BEWARE
+  Bear in mind, your final file **must end with `.yml`**! (.txt or other files will NOT work!)
+  :::
+
 2. Open `/plugins/MTVehicles/supersecretsettings.yml` and set `messagesLanguage: xx`
 
-  > ⚠ **Do NOT change anything else.** (Even the messagesVersion must **remain the same**. Only change the `messagesLanguage` option.)
+  ::: danger BEWARE
+  **Do NOT change anything else.** (Even the messagesVersion must **remain the same**. Only change the `messagesLanguage` option.)
+  :::
+
 3. Reload the plugin by executing `/mtv reload`.
 
-> This custom language **WILL NOT appear** in the `/mtv language` command GUI. You may only set it inside `supersecretsettings.yml`.
+::: warning
+This custom language **WILL NOT appear** in the `/mtv language` command GUI. You may only set it inside `supersecretsettings.yml`.
+:::
 
 <br>
 
@@ -41,6 +49,7 @@ Right now, you've got 2 options:
 
   > All messages are stored in [`src/main/resources/messages/`](https://github.com/GamerJoep/MinetopiaVehicles/tree/master/src/main/resources/messages).<br>
   > ⚠ New version are often developed in another branch. (But don't worry, we may adjust your PR so it's okay.)
+
 - **In case you don't understand Git**, contact us at our [Discord](https://discord.gg/vehicle) and send us your file there.
 
   > It may take a little longer if you submit your file via Discord, but it'll get here eventually.
