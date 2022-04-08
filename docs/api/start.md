@@ -2,7 +2,9 @@
 
 ## Maven
 
-> ⚠ We currently do not offer adding MTVehicles as a dependency from a remote repository.
+::: warning SORRY :(
+We currently do not offer adding MTVehicles as a dependency from a remote repository.
+:::
 
 In its stead, you may move MTVehicles to a separate folder and add it with the `system scope`.
 

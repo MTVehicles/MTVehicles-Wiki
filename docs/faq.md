@@ -41,8 +41,10 @@ Shift and Right-click the vehicle to pick it up.
 You must OWN the vehicle or have the permission `mtvehicles.oppakken`.
 :::
 
-**Beware:** Even after picking the vehicle up, it is still stored in the database and can be restored with the `/mtv restore` command.<br>
+::: danger BEWARE
+Even after picking the vehicle up, it is still stored in the database and can be restored with the `/mtv restore` command.<br>
 **To prevent this**, delete it using `/mtv delete` while holding the item.
+:::
 
 ---
 
