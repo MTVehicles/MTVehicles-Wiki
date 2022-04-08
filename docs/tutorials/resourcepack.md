@@ -1,6 +1,6 @@
 # Resourcepack
 
-::: tip download the resourcepack here: https://mtvehicles.eu/resourcepack
+::: tip Download the resourcepack here: https://mtvehicles.eu/resourcepack
 
 ### Below here you have a tutorial to enable the resourcepack
 
