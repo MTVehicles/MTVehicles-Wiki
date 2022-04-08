@@ -63,7 +63,7 @@ module.exports = {
 				title: 'Tutorials',
 				collapsable: false,
 				children: [
-					'/tutorials/fuel.md',
+					'/tutorials/resourcepack.md',
 				]
 			},
 			{
