@@ -1,7 +1,7 @@
 # Resourcepack
 
 ::: tip
-Download the resourcepack here: [https://mtvehicles.eu/resourcepack](https://mtvehicles.eu/resourcepack) !
+Download the resourcepack here: [https://mtvehicles.eu/resourcepack](https://mtvehicles.eu/resourcepack)
 :::
 
 
