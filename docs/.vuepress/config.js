@@ -2,6 +2,21 @@
 module.exports = {
 	base: '/',
 	cname: 'wiki.mtvehicles.eu',
+plugins:
+  [
+  ['@vuepress/last-updated',
+  {
+    transformer: (timestamp, lang) => {
+	const moment = require('moment')
+	moment.locale(lang)
+	return moment(timestamp).format("LLL")
+    }
+  }],
+  ['@vuepress/pwa',
+  {
+    serviceWorker: true,
+    updatePopup: true
+  }]],
 	postcss: {
 		plugins: [
 			require('css-prefers-color-scheme/postcss'),
@@ -13,6 +28,7 @@ module.exports = {
 		['link', { rel: 'icon', href: 'https://www.spigotmc.org/data/resource_icons/80/80910.jpg' }],
 		['meta', {name: 'theme-color', content: '#25272a'}]
 	],
+
 	theme: "yuu",
 	themeConfig: {
 		yuu: {
