@@ -87,7 +87,7 @@ If you have your own server, try **allocating more RAM**.
 ## 8. How to create a vehicle shop?
 We do not offer such a feature, however, you can achieve the same goal by installing any shop plugin out there.
 
-- If you want to use **commands**, use `/mtv givecar <player> <UUID>`. (Explained [here](#2-how-to-get-a-vehicle).)
+- If you want to use **commands**, use `/mtv givecar <player> <UUID>`. (Explained [here](#_3-how-to-get-a-vehicle).)
 - In case you need to use **items**, use **vouchers** - `/mtv givevoucher <player> <UUID>`. (Works exactly the same as /mtv givecar.)
 
   ::: warning

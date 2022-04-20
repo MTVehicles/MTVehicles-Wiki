@@ -22,8 +22,8 @@ plugins:
 			require('css-prefers-color-scheme/postcss'),
 		]
 	},
-	title: 'MTVehicles',
-	description: 'Wiki of MTVehicles',
+	title: 'MTVehicles Wiki',
+	description: 'Wiki for the MTVehicles plugin',
 	head: [
 		['link', { rel: 'icon', href: 'https://www.spigotmc.org/data/resource_icons/80/80910.jpg' }],
 		['meta', {name: 'theme-color', content: '#25272a'}]
@@ -39,7 +39,7 @@ plugins:
 		},
 		searchPlaceholder: 'Search...',
    		repoLabel: 'Contribute',
-		repo: 'GamerJoep/MTVehicles',
+		repo: 'GamerJoep/MinetopiaVehicles',
 		logo: 'https://www.spigotmc.org/data/resource_icons/80/80910.jpg',
 		editLinks: false,
     		nextLinks: true,
@@ -65,21 +65,22 @@ plugins:
 					'/faq.md',
 				]
 			},
-			{
-				title: 'Information',
-				collapsable: false,
-				children: [
-					'/information/functionalities.md',
-					'/information/commands.md',
-					'/information/softdependencies.md',
-					'/information/placeholders.md',
-				]
-			},
+			
 			{
 				title: 'Tutorials',
 				collapsable: false,
 				children: [
 					'/tutorials/resourcepack.md',
+				]
+			},
+			{
+				title: 'Information',
+				collapsable: false,
+				children: [
+					'/information/functions.md',
+					'/information/commands.md',
+					'/information/softdependencies.md',
+					'/information/placeholders.md',
 				]
 			},
 			{
