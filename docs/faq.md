@@ -11,7 +11,7 @@ For a step-by-step tutorial, [click here](https://github.com/GamerJoep/Minetopia
 You need our **resource pack** to be able to see the vehicles. Download it [here](https://mtvehicles.nl/rp/).
 
 ::: warning
-As of version 2.4.0-pre1, a new version of resource pack (v0.2) is required. Before the release of 2.4.0, it is available exclusively to our [patreons](https://patreon.com/mtvehicles).
+As of version 2.4.0 (The Airplane Update), a new version of resource pack (v0.2) is required!
 :::
 
 ---
@@ -93,3 +93,18 @@ We do not offer such a feature, however, you can achieve the same goal by instal
   ::: warning
   You should NOT sell cars which you get from `/mtv menu`. They already have an owner (and other properties you'd have to edit) set.
   :::
+
+---
+
+## 9. How to fuel a vehicle?
+Enter the vehicle and left-click it while holding a jerry can. You may obtain this jerry can by executing `/mtv fuel`.
+
+::: warning
+Permission `mtvehicles.benzine` necessary.
+:::
+
+**Alternatively**, you may execute `/mtv refill` while holding the vehicle in your hand.
+
+::: warning
+Permission `mtvehicles.refill` necessary.
+:::
