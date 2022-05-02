@@ -57,7 +57,7 @@ plugins:
 		],
 		sidebar: [
 			{
-				title: 'MTVehicles v2.3.0',
+				title: 'MTVehicles v2.4.1',
 				collapsable: false,
 				children: [
 					'/',

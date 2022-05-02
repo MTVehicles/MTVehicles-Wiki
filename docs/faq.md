@@ -8,7 +8,7 @@ For a step-by-step tutorial, [click here](https://github.com/GamerJoep/Minetopia
 ---
 
 ## 2. I can only see diamond hoes!
-You need our **resource pack** to be able to see the vehicles. Download it [here](https://mtvehicles.nl/rp/).
+You need our **resource pack** to be able to see the vehicles. Download it [here](https://mtvehicles.nl/resourcepack/).
 
 ::: warning
 As of version 2.4.0 (The Airplane Update), a new version of resource pack (v0.2) is required!
