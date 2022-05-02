@@ -66,7 +66,7 @@ This means you're using an **incompatible Minecraft version**. We always support
 | 1.13              | ❌ Incompatible  |   | 1.16.5            | ✔️ Compatible    |
 | 1.13.1            | Not guaranteed    |   | 1.17              | Not guaranteed    |
 | 1.13.2            | ✔️ Compatible    |   | 1.17.1            | ✔️ Compatible    |
-| 1.14-1.14.4       | ❌ Incompatible  |   | 1.18-1.18.1       | ❌ Incompatible  |
+| 1.14-1.14.4       | ❌ Incompatible  |   | 1.18-1.18.1       | ⚠️ Compatible since v2.4.1 |
 | 1.15-1.15.1       | Not guaranteed    |   | 1.18.2            | ✔️ Compatible    |
 
 ---
