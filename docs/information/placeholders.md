@@ -1,5 +1,4 @@
 # Placeholders (PAPI)
-![](https://img.shields.io/badge/since-v2.4.0-green)
 
 If you have PlaceholderAPI installed and enabled as a soft-dependency, you may use these placeholders:
 

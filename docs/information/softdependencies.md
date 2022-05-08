@@ -25,6 +25,14 @@ WorldGuard features are disabled by default and have to be enabled in the config
 | `mtv-pickup`     | ALLOW | Enables players to pick up vehicles, **if region whitelist for picking up is enabled.**        |
 |                  | DENY  | Prevents players from picking up vehicles, **if region blacklist for picking up is enabled.**  |
 
+| 🙈 Flags since 2.4.2 | State | Description                                                 |
+|----------------------|-------|-------------------------------------------------------------|
+| `mtv-use-car`        | DENY  | Prevents all players from using CARS in this region.        |
+| `mtv-use-tank`       | DENY  | Prevents all players from using TANKS in this region.       |
+| `mtv-use-hover`      | DENY  | Prevents all players from using HOVERS in this region.      |
+| `mtv-use-helicopter` | DENY  | Prevents all players from using HELICOPTERS in this region. |
+| `mtv-use-airplane`   | DENY  | Prevents all players from using AIRPLANES in this region.   |
+
 ## Vault
 
 You can download <a href="https://www.spigotmc.org/resources/vault.34315/">Vault</a> to enable economy integration. (Of course, you must have an economy plugin that supports Vault.)
@@ -32,7 +40,6 @@ You can download <a href="https://www.spigotmc.org/resources/vault.34315/">Vault
 Options concerning Vault and prices are to be found in the config.yml.
 
 ## PlaceholderAPI
-![](https://img.shields.io/badge/since-v2.4.0-green)
 
 MTVehicles offers special placeholders for you to use if you have PAPI installed.
 

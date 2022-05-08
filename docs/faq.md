@@ -60,14 +60,15 @@ This means you're using an **incompatible Minecraft version**. We always support
 
 | Version(s)        | Compatibility     |   | Version(s)        | Compatibility     |
 |-------------------|-------------------|---|-------------------|-------------------|
-| Older than 1.12   | ❌ Incompatible  |   | 1.15.2            | ✔️ Compatible    |
-| 1.12-1.12.1       | Not guaranteed    |   | 1.16-1.16.3       | ❌ Incompatible  |
-| 1.12.2            | ✔️ Compatible    |   | 1.16.4            | Not guaranteed    |
-| 1.13              | ❌ Incompatible  |   | 1.16.5            | ✔️ Compatible    |
-| 1.13.1            | Not guaranteed    |   | 1.17              | Not guaranteed    |
-| 1.13.2            | ✔️ Compatible    |   | 1.17.1            | ✔️ Compatible    |
-| 1.14-1.14.4       | ❌ Incompatible  |   | 1.18-1.18.1       | ⚠️ Compatible since v2.4.1 |
+| Older than 1.12   | ❌ Incompatible  |   | 1.16-1.16.3            | ❌ Incompatible    |
+| 1.12-1.12.1       | Not guaranteed    |   | 1.16.4            | Not guaranteed    |
+| 1.12.2            | ✔️ Compatible    |   | 1.16.5            | ✔️ Compatible    |
+| 1.13              | ❌ Incompatible  |   | 1.17              | Not guaranteed    |
+| 1.13.1            | Not guaranteed    |   | 1.17.1            | ✔️ Compatible    | 
+| 1.13.2            | ✔️ Compatible    |    | 1.18            | ⚠️ Not guaranteed |
+| 1.14-1.14.4       | ❌ Incompatible  |   | 1.18.1       | ⚠️ Compatible since v2.4.1 |
 | 1.15-1.15.1       | Not guaranteed    |   | 1.18.2            | ✔️ Compatible    |
+| 1.15.2            | ✔️ Compatible    |   | 1.19 and newer     | ❌ Incompatible  |
 
 ---
 

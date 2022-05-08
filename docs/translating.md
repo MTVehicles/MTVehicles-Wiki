@@ -1,7 +1,11 @@
 # Translate the plugin
 
+::: warning WE NEED YOUR HELP
+We need your help in translating all plugin messages to multiple languages! See [this](#do-you-want-to-contribute-🫂) for more info!
+:::
+
 ## 1. Use one of MTV's offered languages
-Apart from English (default), we and our community have already managed to add Dutch, Czech and Spanish (and as of 2.4.0, also German, Turkish and Chinese).
+Apart from English (default), we and our community have already managed to add 6 other languages - Dutch, Czech, Spanish, German, Turkish and Chinese.
 
 1. Execute `/mtv language`
 2. Choose a language by clicking an item
@@ -47,8 +51,7 @@ This custom language **WILL NOT appear** in the `/mtv language` command GUI. You
 Right now, you've got 2 options:
 - **If you're familiar with how GitHub works**, [open a pull request](https://github.com/GamerJoep/MinetopiaVehicles/pulls) where you'll add the new file.
 
-  > All messages are stored in [`src/main/resources/messages/`](https://github.com/GamerJoep/MinetopiaVehicles/tree/master/src/main/resources/messages).<br>
-  > ⚠ New version are often developed in another branch. (But don't worry, we may adjust your PR so it's okay.)
+  > All messages are stored in [`src/main/resources/messages/`](https://github.com/GamerJoep/MinetopiaVehicles/tree/master/src/main/resources/messages).
 
 - **In case you don't understand Git**, contact us at our [Discord](https://discord.gg/vehicle) and send us your file there.
 
