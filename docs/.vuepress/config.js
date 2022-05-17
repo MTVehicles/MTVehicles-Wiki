@@ -58,7 +58,7 @@ plugins:
 		sidebar: [
 			{
 				title: 'MTVehicles v2.4.1',
-				collapsible: false,
+				collapsable: false,
 				children: [
 					'/',
 					'/translating.md',
@@ -68,14 +68,14 @@ plugins:
 			
 			{
 				title: 'Tutorials',
-				collapsible: false,
+				collapsable: false,
 				children: [
 					'/tutorials/resourcepack.md',
 				]
 			},
 			{
 				title: 'Information',
-				collapsible: false,
+				collapsable: false,
 				children: [
 					'/information/functions.md',
 					'/information/commands.md',
@@ -85,11 +85,11 @@ plugins:
 			},
 			{
 				title: 'API',
-				collapsible: false,
+				collapsable: false,
 				children: [
 					'/api/start.md',
 					{
-						title: 'Javadoc',
+						text: 'Javadoc',
 						link: 'http://docs.mtvehicles.eu/',
 					}
 				]
