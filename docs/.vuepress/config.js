@@ -89,7 +89,7 @@ plugins:
 				children: [
 					'/api/start.md',
 				]
-			},
+			}
 		]
 	}
 }
