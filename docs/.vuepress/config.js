@@ -88,10 +88,6 @@ plugins:
 				collapsable: false,
 				children: [
 					'/api/start.md',
-					{
-						text: 'Javadoc',
-						link: 'http://docs.mtvehicles.eu/',
-					}
 				]
 			},
 		]
