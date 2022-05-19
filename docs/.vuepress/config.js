@@ -71,6 +71,7 @@ plugins:
 				collapsable: false,
 				children: [
 					'/tutorials/resourcepack.md',
+					'/tutorials/customvehicles.md',
 				]
 			},
 			{
