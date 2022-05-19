@@ -26,7 +26,7 @@ If your models use custom textures, remember to put them to the `assets/minecraf
 
 ### 2. Add a&nbsp;diamond hoe model
 
-Create a new file `assets/minecraft/models/item/diamond_hoe.json` and copy this text (an&nbsp;example taken from the plugin's default resource pack):
+Create a new file `assets/minecraft/models/item/diamond_hoe.json` and copy-paste this text (an&nbsp;edited example taken from the plugin's default resource pack):
 
 ```json
 {
@@ -36,8 +36,8 @@ Create a new file `assets/minecraft/models/item/diamond_hoe.json` and copy this 
 	},
 	"overrides": [
 		{ "predicate": { "damage": 0 }, "model": "item/diamond_hoe" },
-		{ "predicate": { "damaged": 0, "damage": 0.64404609475032 }, "model": "custom/vehicles/hotrod_red" },
-    { "predicate": { "damaged": 0, "damage": 0.649807938540333 }, "model": "custom/vehicles/sedan_politie" }
+		{ "predicate": { "damaged": 0, "damage": 0.64404609475032 }, "model": "custom/hotrod_red" },
+    { "predicate": { "damaged": 0, "damage": 0.649807938540333 }, "model": "custom/sedan_politie" }
 	]
 }
 ```
@@ -48,7 +48,7 @@ Diamond hoe has a maximum of 1562 uses. If you want to use durability 1300, divi
 
 After this step, replace the model path with the actual path to your model. The file extension (.json) is not necessary.
 
-> One file note: You might use a different item (not only a diamond hoe), but as the default vehicles already use diamond hoes, why getting rid of other items, right?
+> One final note: You might use a different item (not only a diamond hoe), but as the default vehicles already use diamond hoes, why getting rid of other items, right?
 
 ### 3. Ready!
 
@@ -143,6 +143,6 @@ You may only add 1&nbsp;variant, you may add 30. That's entirely up to you. What
 
 Reload the plugin and try it out!
 
-:: tip
+::: tip
 If you have any other questions, [contact us](https://discord.gg/vehicle)!
-::
+:::
