@@ -12,9 +12,9 @@ In its stead, you may move MTVehicles to a separate folder and add it with the `
 <dependency>
     <groupId>nl.mtvehicles</groupId>
     <artifactId>core</artifactId>
-    <version>2.3.0</version>
+    <version>2.4.3</version>
     <scope>system</scope>
-    <systemPath>${pom.basedir}/libs/MTVehicles jar<systemPath>
+    <systemPath>${project.basedir}/libs/MTVehicles.jar</systemPath>
 </dependency>
 ```
 
