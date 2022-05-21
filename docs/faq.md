@@ -65,10 +65,10 @@ This means you're using an **incompatible Minecraft version**. We always support
 | 1.12.2            | ✔️ Compatible    |   | 1.16.5            | ✔️ Compatible    |
 | 1.13              | ❌ Incompatible  |   | 1.17              | Not guaranteed    |
 | 1.13.1            | Not guaranteed    |   | 1.17.1            | ✔️ Compatible    | 
-| 1.13.2            | ✔️ Compatible    |    | 1.18            | ⚠️ Not guaranteed |
-| 1.14-1.14.4       | ❌ Incompatible  |   | 1.18.1       | ⚠️ Compatible since v2.4.1 |
-| 1.15-1.15.1       | Not guaranteed    |   | 1.18.2            | ✔️ Compatible    |
-| 1.15.2            | ✔️ Compatible    |   | 1.19 and newer     | ❌ Incompatible  |
+| 1.13.2            | ✔️ Compatible    |    | 1.18             | Not guaranteed    |
+| 1.14-1.14.4       | ❌ Incompatible  |   | 1.18.1-1.18.2     | ✔️ Compatible     |
+| 1.15-1.15.1       | Not guaranteed    |   | 1.19 and newer | ❌ Incompatible    |
+| 1.15.2            | ✔️ Compatible    |   | --- | ---  |
 
 ---
 
@@ -109,3 +109,13 @@ Permission `mtvehicles.benzine` necessary.
 ::: warning
 Permission `mtvehicles.refill` necessary.
 :::
+
+---
+
+## 10. How to shoot (from a tank)?
+
+Firstly, only tank shoots (nothing else).
+
+Secondly, press `space` to shoot!
+
+If you want to shoot TNTs, you have to set `tankTNT: true` in `config.yml` and reload the plugin (`/mtv reload`)!
