@@ -6,12 +6,14 @@ Is something not quite clear? Feel free to ask in our Discord server: [https://d
 
 ## Main commands
 
-| Command           | Description                                       | permission                                       |
-|-------------------|---------------------------------------------------|--------------------------------------------------|
-| /vehicle info     | Get information about a vehicle                   | `None`, `mtvehicles.admin` to display admin info |
-| /vehicle help     | Get a list of all the possible commands           | `None`, `mtvehicles.admin` to display admin info |
-| /vehicle version  | Get info about the plugin *(use this on discord)* | `mtvehicles.admin`                               |
-| /vehicle language | Change the plugin language                        | `mtvehicles.admin` or `mtvehicles.language`      |
+| Command             | Description                                       | Permission                                       |
+|---------------------|---------------------------------------------------|--------------------------------------------------|
+| /vehicle info       | Get information about a vehicle                   | `None`, `mtvehicles.admin` to display admin info |
+| /vehicle help       | Get a list of all the possible commands           | `None`, `mtvehicles.admin` to display admin info |
+| /vehicle version    | Get info about the plugin *(use this on discord)* | `mtvehicles.admin`                               |
+| /vehicle language   | Change the plugin language                        | `mtvehicles.admin` or `mtvehicles.language`      |
+| /vehicle buycar     | Buy a vehicle (Economy plugin + Vault necessary)  | `None` ⚠️ Since 2.5.0-pre1                       |
+| /vehicle buyvoucher | Buy a voucher (Economy plugin + Vault necessary)  | `None` ⚠️ Since 2.5.0-pre1                       |
 
 ## Vehicle specific commands
 These commands can only be executed by the owner of the vehicle
