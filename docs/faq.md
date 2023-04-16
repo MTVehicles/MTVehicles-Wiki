@@ -119,3 +119,9 @@ Firstly, only tank shoots (nothing else).
 Secondly, press `space` to shoot!
 
 If you want to shoot TNTs, you have to set `tankTNT: true` in `config.yml` and reload the plugin (`/mtv reload`)!
+
+---
+
+## 11. How to fly with a UFO?
+
+UFO doesn't fly, only airplanes and helicopters do.
