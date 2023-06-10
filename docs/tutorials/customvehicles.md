@@ -8,7 +8,7 @@ In&nbsp;case you wish to add your own custom vehicles to your server, follow thi
 - Access to console and server files
 
 
-## Create a&nbsp;resource&nbsp;pack
+## Create a resource pack
 
 For the vehicles to work properly, you need to setup a&nbsp;resource pack where vehicles are determined by an item's durability.
 
