@@ -125,3 +125,15 @@ If you want to shoot TNTs, you have to set `tankTNT: true` in `config.yml` and r
 ## 11. How to fly with a UFO?
 
 UFO doesn't fly, only airplanes and helicopters do.
+
+---
+
+## 12. How to fly an airplane?
+
+To take off, you need to reach a certain speed. Then, take off with space (the same way you would with a helicopter).
+
+---
+
+## 13. Why isn't my boat moving?
+
+Boats need to be in at least 2-block-deep water to move. (This means you can't operate them in shallow waters and on land.)
