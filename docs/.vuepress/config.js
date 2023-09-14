@@ -82,6 +82,7 @@ plugins:
 					'/information/commands.md',
 					'/information/softdependencies.md',
 					'/information/placeholders.md',
+					'/information/skript.md',
 				]
 			},
 			{
