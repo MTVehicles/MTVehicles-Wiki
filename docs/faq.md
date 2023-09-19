@@ -72,9 +72,11 @@ This means you're using an **incompatible Minecraft version**. We always support
 | 1.16-1.16.3       | ❌ Incompatible  |   | Newer snapshots   | ❌ Incompatible |
 ---
 
-## 6. The vehicles do not move. I am using a compatible version of Paper.
+## ~6. The vehicles do not move. I am using a compatible version of Paper.~
 
-You need to open the `paper.yml` file and set `armor-stand-tick: true`.
+~You need to open the `paper.yml` file and set `armor-stand-tick: true`.~
+
+Not necessary in the newest plugin version.
 
 ---
 
