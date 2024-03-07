@@ -139,3 +139,9 @@ To take off, you need to reach a certain speed. Then, take off with space (the s
 ## 13. Why isn't my boat moving?
 
 Boats need to be in at least 2-block-deep water to move. (This means you can't operate them in shallow waters and on land.)
+
+---
+
+## 14. The vehicle is removed form data, how to remove up?
+
+b
