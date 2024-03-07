@@ -144,6 +144,8 @@ Boats need to be in at least 2-block-deep water to move. (This means you can't o
 
 ## 14. The vehicle is removed from the data, how to remove up?
 
+![image](https://github.com/GamerJoep/MTVehicles-Wiki/assets/52205375/6e01f2b0-d2f0-4a05-9a42-0bb416846787)
+
 This will delete all armorstands in the raduis of `3`. Make sure you stand in the middle of the vehicle or change the radius.
 - In Minecraft version 1.12.2 use `/kill @e[type=ArmorStand,r=3]`
 - Versions above 1.12.2 use  `/minecraft:kill @e[type=armor_stand,distance=..3]`
