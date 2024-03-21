@@ -1,4 +1,4 @@
-# Skript (since 2.5.1)
+# Skript
 
 If you have Skript installed, you may use the following:
 
@@ -56,3 +56,25 @@ If you have Skript installed, you may use the following:
 | Voucher Use    | `on vehicle voucher use:`                                        |
 |                | `set {_driver} to event-player`                                  |
 |                | `set {_uuid} to event-text`                                      |
+
+### New (from 2.5.4)
+
+| Effect             | Examples                                                   |
+|--------------------|------------------------------------------------------------|
+| Delete vehicle     | `delete mtv vehicle {_car}`                                |
+| Despawn vehicle    | `despawn mtv vehicle {_car}`                               |
+| Mount vehicle      | `make player mount mtv vehicle {_car}`                     |
+| Edit license plate | `edit license plate of a mtv vehicle {_car} to "DF-4J-2R"` |
+|                    | `set {_car}'s mtv license plate to "DF-4J-2R"`             |
+|                    | ⚠️ Your {_car} variable may stop working after this! ⚠      |
+| Teleport vehicle   | `teleport mtv vehicle {_car} to location {_loc}`           |
+
+| Expression       | Examples                                                         |
+|------------------|------------------------------------------------------------------|
+| Create vehicle   | `set {_car} to a new mtv vehicle with UUID "C4UQZJ" and owner player` |
+| Vehicle Type     | `set {_type} to {_car}'s vehicle type`                           |
+|                  | `set {_type} to vehicle type of (player's driven mtv vehicle)`   |
+| Vehicle UUID     | `set {_type} to {_car}'s vehicle uuid`                           |
+|                  | `set {_type} to vehicle UUID of (player's driven mtv vehicle)`   |
+| Vehicle Location | `set {_type} to {_car}'s vehicle location`                       |
+|                  | `set {_loc} to the vehicle location of (mtv vehicle with license plate "DF-4J-2R")` |
