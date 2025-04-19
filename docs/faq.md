@@ -49,7 +49,7 @@ Even after picking the vehicle up, it is still stored in the database and can be
 ---
 
 ## 5. I am getting 'An internal error occurred...' error
-Firstly, **check your console** and look for **this message** (time may be different, of course):
+Firstly, **check your console** and look for **this message** (time/version may be different, of course):
 
 ![Plugin is disabled](https://user-images.githubusercontent.com/47473562/161583020-5b4eea98-16b6-44a5-993e-c53b740df610.png)
 
@@ -67,8 +67,8 @@ This means you're using an **incompatible Minecraft version**. We always support
 | 1.13.1            | Not guaranteed    |   | 1.18-1.18.1      | Not guaranteed    |
 | 1.13.2            | ✔️ Compatible    |    | 1.18.2            | ✔️ Compatible   |
 | 1.14-1.14.4       | ❌ Incompatible  |   | 1.19-1.19.4       |  ✔️ Compatible  |
-| 1.15-1.15.1       | Not guaranteed    |   | 1.20-1.20.3     |  Not guaranteed  |
-| 1.15.2            | ✔️ Compatible    |   | 1.20.4            | ✔️ Compatible  |
+| 1.15-1.15.1       | Not guaranteed    |   | 1.20-1.20.1     | ❌ Incompatible |
+| 1.15.2            | ✔️ Compatible    |   | 1.20.2-1.21.4     | ✔️ Compatible  |
 | 1.16-1.16.3       | ❌ Incompatible  |   | Newer snapshots   | ❌ Incompatible |
 ---
 
