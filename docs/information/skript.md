@@ -91,7 +91,7 @@ Since 2.5.6, Vehicle type has been added and effects strictly only allow vehicle
 
 | Name                        | Examples                                                            | Since       |
 | --------------------------- | ------------------------------------------------------------------- | ----------- |
-| ~~isVehicle~~ (Deprecated.) | `if {_object} is (not) an mtv vehicle:`                             | 2.5.5–2.5.5 |
+| ~~isVehicle~~ (Deprecated.) | ~~`if {_object} is (not) an mtv vehicle:`~~                         | 2.5.5–2.5.5 |
 | isOccupied                  | `if the vehicle {_car} is (not) occupied:`                          | 2.5.5       |
 | isOwner                     | `if player is (not) the vehicle owner of {_car}:`                   | 2.5.5       |
 | isRider                     | `if player is (not) a vehicle rider of {_car}:`                     | 2.5.5       |
