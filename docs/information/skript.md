@@ -9,7 +9,7 @@ If you have Skript installed, you may use the following:
 | Vehicle          | `mtv vehicle`                                         | `set {_car} to mtv vehicle with license plate "DF-4J-2R"`                         | 2.5.1       |
 |                  | `%player%'s driven mtv vehicle`                       | `set {_car} to player's driven mtv vehicle`                                       | 2.5.1       |
 |                  | `new mtv vehicle with UUID %uuid% and owner %player%` | `set {_car} to new mtv vehicle with UUID "C4UQZJ" and owner player`               | 2.5.4       |
-| License Plate    | ~~`{_car}'s license plate`~~                          |                                                                                   | 2.5.1–2.5.5 |
+| License Plate    | ~~`{_car}'s license plate`~~                          | Deprecated.                                                                       | 2.5.1–2.5.5 |
 |                  | `vehicle license plate`                               | `set {_lp} to vehicle license plate of (player's driven mtv vehicle)`             | 2.5.6       |
 |                  |                                                       | `set {_car}'s vehicle license plate to "RW-2K-7I"`                                |             |
 | Vehicle Type     | `vehicle type`                                        | `set {_type} to {_car}'s vehicle type`                                            | 2.5.4       |
@@ -30,80 +30,76 @@ If you have Skript installed, you may use the following:
 |                  |                                                       | `set vehicle fuel usage of {_car} to 0.5`                                         |             |
 
 
+#### Effects
 
+| Name                          | Examples                                                             | Since       |
+| ----------------------------- | -------------------------------------------------------------------- | ----------- |
+| Give vehicle                  | `give mtv vehicle {_boat} to player`                                 | 2.5.1       |
+|                               | `give {_player} mtv vehicle with license plate "DF-4J-2R"`           |             |
+| Spawn vehicle                 | `spawn mtv vehicle {_car} at location {_loc}`                        | 2.5.1       |
+|                               | `spawn mtv vehicle with license plate "DF-4J-2R" at {_loc}`          |             |
+| Despawn vehicle               | `despawn mtv vehicle {_car}`                                         | 2.5.4       |
+| Delete vehicle                | `delete mtv vehicle {_car}`                                          | 2.5.4       |
+| Mount vehicle                 | `make player mount mtv vehicle {_car}`                               | 2.5.4       |
+| Teleport vehicle              | `teleport mtv vehicle {_car} to location {_loc}`                     | 2.5.4       |
+| ~~Edit license plate~~        | ~~`edit license plate of a mtv vehicle {_car} to "DF-4J-2R"`~~       | 2.5.4–2.5.5 |
+|                               | deprecated from 2.5.6, use vehicle license plate expression instead  |             |
+| Add rider/member (=passenger) | `add {_player} as a rider of the vehicle {_car}`                     | 2.5.5       |
+|                               | `add player {_offlinePlayer} as a member to mtv vehicle {_car}`      | 2.5.5       |
+| Remove rider/member           | `remove {_player} as a rider of the vehicle {_car}`                  | 2.5.5       |
+|                               | `remove player {_offlinePlayer} as a member from mtv vehicle {_car}` | 2.5.5       |
+| Block/Unblock braking         | `block vehicle breaking of mtv vehicle {_car}`                       | 2.5.6       |
+|                               | `unblock vehicle breaking of license plate "MT-12-34"`               |             |
+| Block/Unblock friction        | `block vehicle friction of {_car}`                                   | 2.5.6       |
+|                               | `unblock vehicle friction of license "MT-12-34"`                     |             |
 
-::: tip
-I'll update the rest of the page to a similar table soon
+::: warning
+Up to 2.5.5, any object could be given as a parameter to any effect – if it wasn't a vehicle, a warning message was sent to console. 
+
+Since 2.5.6, Vehicle type has been added and effects strictly only allow vehicles to be used as parameters. This will foolproof your code so it does not break, but may initially result in some errors while reloading skripts.
 :::
 
 
-#### Effects
-
-| Name            | Examples                                                         |
-|-----------------|------------------------------------------------------------------|
-| Give a vehicle  | `give mtv vehicle {_boat} to player`                             |
-|                 | `give {_player} mtv vehicle with license plate "DF-4J-2R"`       |
-|                 | `give {_player} mtv vehicle with uuid "XN9MKB"`                  |
-| Spawn a vehicle | `spawn mtv vehicle {_car} at location {_loc}`                    |
-|                 | `spawn mtv vehicle with license plate "DF-4J-2R" at {_loc}`      |
-| Delete vehicle     | `delete mtv vehicle {_car}`                                |
-| Despawn vehicle    | `despawn mtv vehicle {_car}`                               |
-| Mount vehicle      | `make player mount mtv vehicle {_car}`                     |
-| Edit license plate | `edit license plate of a mtv vehicle {_car} to "DF-4J-2R"` |
-|                    | `set {_car}'s mtv license plate to "DF-4J-2R"`             |
-|                    | ⚠️ Your {_car} variable may stop working after this! ⚠      |
-| Teleport vehicle   | `teleport mtv vehicle {_car} to location {_loc}`           |
-
 #### Events
 
-| Name           | Examples                                                         |
-|----------------|------------------------------------------------------------------|
-| Horn Use       | `on horn use:`                                                   |
-|                | `set {_driver} to event-player`                                  |
-|                | `set {_licensePlate} to event-text`                              |
-| Tank Shoot     | `on tank shoot:`                                                 |
-|                | `set {_driver} to event-player`                                  |
-|                | `set {_licensePlate} to event-text`                              |
-| Trunk Open     | `on vehicle trunk open:`                                         |
-|                | `set {_driver} to event-player`                                  |
-|                | `set {_licensePlate} to event-text`                              |
-| Vehicle Enter  | `on mtv vehicle enter:`                                          |
-|                | `set {_driver} to event-player`                                  |
-|                | `set {_licensePlate} to event-text`                              |
-| Vehicle Leave  | `on mtv vehicle leave:`                                          |
-|                | `set {_driver} to event-player`                                  |
-|                | `set {_licensePlate} to event-text`                              |
-| Vehicle Pick Up| `on vehicle pick up:`                                            |
-|                | `set {_driver} to event-player`                                  |
-|                | `set {_licensePlate} to event-text`                              |
-| Vehicle Place  | `on vehicle place:`                                              |
-|                | `set {_driver} to event-player`                                  |
-|                | `set {_licensePlate} to event-text`                              |
-|                | `set {_placeLocation} to event-location`                         |
-| Region Enter   | `on vehicle region enter:`                                       |
-|                | `set {_driver} to event-player`                                  |
-|                | `set {_enteredRegion} to event-text`                             |
-| Region Leave   | `on vehicle region leave:`                                       |
-|                | `set {_driver} to event-player`                                  |
-|                | `set {_leftRegion} to event-text`                                |
-| Voucher Use    | `on vehicle voucher use:`                                        |
-|                | `set {_driver} to event-player`                                  |
-|                | `set {_uuid} to event-text`                                      |
-
-### New (from 2.5.5)
-
-| Effect              | Examples                                                   |
-|---------------------|------------------------------------------------------------|
-| [Add Rider/Member](https://github.com/MTVehicles/MinetopiaVehicles/blob/master/src/main/java/nl/mtvehicles/core/infrastructure/dependencies/skript/effects/EffAddRiderMember.java)    | `add {_player} as a rider of the vehicle {_car}`           |
-|                     | `add player {_offlinePlayer} as a member to mtv vehicle {_car}` |
-| [Remove Rider/Member](https://github.com/MTVehicles/MinetopiaVehicles/blob/master/src/main/java/nl/mtvehicles/core/infrastructure/dependencies/skript/effects/EffRemoveRiderMember.java) | `remove {_player} as a rider of the vehicle {_car}`        |
-|                     | `remove player {_offlinePlayer} as a member from mtv vehicle {_car}` |
+| Name            | Expression                 | Parameters                        | Since |
+| --------------- | -------------------------- | --------------------------------- | ----- |
+| Horn Use        | `on horn use:`             | `event-player` (driver)           | 2.5.1 |
+|                 |                            | `event-text` (license plate)      |       |
+| Tank Shoot      | `on tank shoot:`           | `event-player` (driver)           | 2.5.1 |
+|                 |                            | `event-text` (license plate)      |       |
+| Trunk Open      | `on vehicle trunk open:`   | `event-player`                    | 2.5.1 |
+|                 |                            | `event-text` (license plate)      |       |
+| Vehicle Enter   | `on mtv vehicle enter:`    | `event-player`                    | 2.5.1 |
+|                 |                            | `event-text` (license plate)      |       |
+| Vehicle Leave   | `on mtv vehicle leave:`    | `event-player`                    | 2.5.1 |
+|                 |                            | `event-text` (license plate)      |       |
+| Vehicle Pick Up | `on vehicle pick up:`      | `event-player`                    | 2.5.1 |
+|                 |                            | `event-text` (license plate)      |       |
+| Vehicle Place   | `on vehicle place:`        | `event-player`                    | 2.5.1 |
+|                 |                            | `event-text` (license plate)      |       |
+|                 |                            | `event-location` (placement loc.) |       |
+| Voucher Use     | `on vehicle voucher use:`  | `event-player`                    | 2.5.1 |
+|                 |                            | `event-text` (uuid)               |       |
+| Region Enter    | `on vehicle region enter:` | `event-player`   (driver)         | 2.5.1 |
+|                 |                            | `event-text` (entered region)     |       |
+| Region Leave    | `on vehicle region leave:` | `event-player` (driver)           | 2.5.1 |
+|                 |                            | `event-text`  (left region)       |       |
 
 
-| Conditions       | Examples                                                         |
-|------------------|------------------------------------------------------------------|
-| [isVehicle](https://github.com/MTVehicles/MinetopiaVehicles/blob/master/src/main/java/nl/mtvehicles/core/infrastructure/dependencies/skript/conditions/CondIsVehicle.java)        | `if {_car} is (not) an mtv vehicle:` (to prevent issues)         |
-| [isOccupied](https://github.com/MTVehicles/MinetopiaVehicles/blob/master/src/main/java/nl/mtvehicles/core/infrastructure/dependencies/skript/conditions/CondIsOccupied.java)       | `if the vehicle {_car} is (not) occupied:`                       |
-| [isOwner](https://github.com/MTVehicles/MinetopiaVehicles/blob/master/src/main/java/nl/mtvehicles/core/infrastructure/dependencies/skript/conditions/CondIsOwner.java)          | `if player is (not) the vehicle owner of {_car}:`                |
-| [isRider](https://github.com/MTVehicles/MinetopiaVehicles/blob/master/src/main/java/nl/mtvehicles/core/infrastructure/dependencies/skript/conditions/CondIsRider.java)          | `if player is (not) a vehicle rider of {_car}:`                  |
-| [canRide](https://github.com/MTVehicles/MinetopiaVehicles/blob/master/src/main/java/nl/mtvehicles/core/infrastructure/dependencies/skript/conditions/CondCanRide.java) = owner OR rider | `if {_p} can/cannot ride [mtv] vehicle {_car}:`          |
+#### Conditions
+
+| Name                        | Examples                                                            | Since       |
+| --------------------------- | ------------------------------------------------------------------- | ----------- |
+| ~~isVehicle~~ (Deprecated.) | `if {_object} is (not) an mtv vehicle:`                             | 2.5.5–2.5.5 |
+| isOccupied                  | `if the vehicle {_car} is (not) occupied:`                          | 2.5.5       |
+| isOwner                     | `if player is (not) the vehicle owner of {_car}:`                   | 2.5.5       |
+| isRider                     | `if player is (not) a vehicle rider of {_car}:`                     | 2.5.5       |
+| canRide (= owner OR rider)  | `if {_p} can/cannot ride [mtv] vehicle {_car}:`                     | 2.5.5       |
+| isDrivingVehicle            | `if player {_p} is (not) driving an mtv vehicle`                    | 2.5.6       |
+| isInsideVehicle             | `if player is (not) inside mtv vehicle:`                            | 2.5.6       |
+|                             | `if player {_p} is (not) seated in an mtv vehicle:`                 |             |
+| isBrakingBlocked            | `if mtv vehicle breaking of vehicle {_car} is (not) blocked:`       | 2.5.6       |
+|                             | `if vehicle breaking of license plate "MT-12-34" is (not) blocked:` |             |
+| isFrictionBlocked           | `if mtv vehicle friction of vehicle {_car} is (not)blocked:`        | 2.5.6       |
+|                             | `if vehicle friction of license plate "MT-12-34" is (not) blocked:` |             |
