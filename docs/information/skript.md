@@ -4,19 +4,38 @@ If you have Skript installed, you may use the following:
 
 #### Expressions
 
-| Name           | Examples                                                         |
-|----------------|------------------------------------------------------------------|
-| Create vehicle   | `set {_car} to a new mtv vehicle with UUID "C4UQZJ" and owner player` |
-| Vehicle        | `set {_car} to a new mtv vehicle with license plate "DF-4J-2R"`  |
-|                | `set {_helicopter} to player's driven mtv vehicle`               |
-| License plate  | `set {_licensePlate} to {_car}'s license plate`                  |
-|                | `set {_lp} to license plate of (player's driven mtv vehicle)`    |
-| Vehicle Type     | `set {_type} to {_car}'s vehicle type`                           |
-|                  | `set {_type} to vehicle type of (player's driven mtv vehicle)`   |
-| Vehicle UUID     | `set {_type} to {_car}'s vehicle uuid`                           |
-|                  | `set {_type} to vehicle UUID of (player's driven mtv vehicle)`   |
-| Vehicle Location | `set {_type} to {_car}'s vehicle location`                       |
-|                  | `set {_loc} to the vehicle location of (mtv vehicle with license plate "DF-4J-2R")` |
+| Name             | Expression                                            | Examples                                                                          | Since       |
+| ---------------- | ----------------------------------------------------- | --------------------------------------------------------------------------------- | ----------- |
+| Vehicle          | `mtv vehicle`                                         | `set {_car} to mtv vehicle with license plate "DF-4J-2R"`                         | 2.5.1       |
+|                  | `%player%'s driven mtv vehicle`                       | `set {_car} to player's driven mtv vehicle`                                       | 2.5.1       |
+|                  | `new mtv vehicle with UUID %uuid% and owner %player%` | `set {_car} to new mtv vehicle with UUID "C4UQZJ" and owner player`               | 2.5.4       |
+| License Plate    | ~~`{_car}'s license plate`~~                          |                                                                                   | 2.5.1–2.5.5 |
+|                  | `vehicle license plate`                               | `set {_lp} to vehicle license plate of (player's driven mtv vehicle)`             | 2.5.6       |
+|                  |                                                       | `set {_car}'s vehicle license plate to "RW-2K-7I"`                                |             |
+| Vehicle Type     | `vehicle type`                                        | `set {_type} to {_car}'s vehicle type`                                            | 2.5.4       |
+| Vehicle UUID     | `vehicle UUID`                                        | `set {uuid} to vehicle UUID of (player's driven mtv vehicle)`                     | 2.5.4       |
+| Vehicle Location | `vehicle location`                                    | `set {_type} to {_car}'s vehicle location`                                        | 2.5.4       |
+| Owner's name     | `vehicle owner`                                       | `set {_owner} to vehicle owner of (mtv vehicle with license plate "DF-4J-2R")`    | 2.5.5       |
+| Vehicle Speed    | `vehicle speed`                                       | `set {_licensePlate} to vehicle speed of (player's driven mtv vehicle)`           | 2.5.5       |
+|                  |                                                       | `add 0.5 to vehicle speed of (player's driven mtv vehicle)`                       | 2.5.6       |
+|                  |                                                       | `set mtv vehicle speed of {_helicopter} to 3`                                     | 2.5.6       |
+| Rotation Speed   | `vehicle rotation speed`                              | similar to vehicle speed                                                          | 2.5.6       |
+| Vehicle Health   | `vehicle health`                                      | `set {_currentHealth} to {_car}'s vehicle health`                                 | 2.5.6       |
+|                  |                                                       | `set vehicle health of {_car} to 100`                                             |             |
+|                  |                                                       | `remove 55.5 from {_car}'s vehicle health` / `add 0.5 to {_car}'s vehicle health` |             |
+| Current Fuel     | `vehicle fuel level`                                  | `set {_fuel} to {_car}'s vehicle fuel level`                                      | 2.5.6       |
+|                  |                                                       | `set vehicle fuel level of {_car} to 96`                                          |             |
+|                  |                                                       | `remove 10 from {_car}'s vehicle fuel level` / `add 30 to ...`                    |             |
+| Fuel Usage       | `vehicle fuel usage`                                  | `set {_usage} to {_car}'s vehicle fuel usage`                                     | 2.5.6       |
+|                  |                                                       | `set vehicle fuel usage of {_car} to 0.5`                                         |             |
+
+
+
+
+::: tip
+I'll update the rest of the page to a similar table soon
+:::
+
 
 #### Effects
 
@@ -80,12 +99,6 @@ If you have Skript installed, you may use the following:
 | [Remove Rider/Member](https://github.com/MTVehicles/MinetopiaVehicles/blob/master/src/main/java/nl/mtvehicles/core/infrastructure/dependencies/skript/effects/EffRemoveRiderMember.java) | `remove {_player} as a rider of the vehicle {_car}`        |
 |                     | `remove player {_offlinePlayer} as a member from mtv vehicle {_car}` |
 
-| Expression       | Examples                                                         |
-|------------------|------------------------------------------------------------------|
-| [Owner (name)](https://github.com/MTVehicles/MinetopiaVehicles/blob/master/src/main/java/nl/mtvehicles/core/infrastructure/dependencies/skript/expressions/ExprOwner.java)            | `set {_owner} to {_car}'s vehicle owner`                         |
-|                  | `set {_owner} to vehicle owner of (mtv vehicle with license plate "DF-4J-2R")` |
-| [Speed](https://github.com/MTVehicles/MinetopiaVehicles/blob/master/src/main/java/nl/mtvehicles/core/infrastructure/dependencies/skript/expressions/ExprSpeed.java)            | `set {_licensePlate} to {_car}'s vehicle speed`                  |
-|                  | `set {_licensePlate} to vehicle speed of (player's driven mtv vehicle)` |
 
 | Conditions       | Examples                                                         |
 |------------------|------------------------------------------------------------------|
