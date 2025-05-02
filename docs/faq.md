@@ -67,9 +67,9 @@ This means you're using an **incompatible Minecraft version**. We always support
 | 1.13.1            | Not guaranteed    |   | 1.18-1.18.1      | Not guaranteed    |
 | 1.13.2            | ✔️ Compatible    |    | 1.18.2            | ✔️ Compatible   |
 | 1.14-1.14.4       | ❌ Incompatible  |   | 1.19-1.19.4       |  ✔️ Compatible  |
-| 1.15-1.15.1       | Not guaranteed    |   | 1.20-1.20.1     | ❌ Incompatible |
+| 1.15-1.15.1       | Not guaranteed    |   | 1.20-1.20.1     | ⚠️ Since 2.5.6 |
 | 1.15.2            | ✔️ Compatible    |   | 1.20.2-1.21.4     | ✔️ Compatible  |
-| 1.16-1.16.3       | ❌ Incompatible  |   | Newer snapshots   | ❌ Incompatible |
+| 1.16-1.16.3       | ❌ Incompatible  |   | 1.21.5           | ⚠️ Since 2.5.6 |
 ---
 
 ## ~~6. The vehicles do not move. I am using a compatible version of Paper.~~
