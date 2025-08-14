@@ -3,7 +3,7 @@
 ## Adding as a dependency
 
 - You can use **JitPack** to add MTVehicles as a dependency to your project.
-- See the JitPack page for more information: https://jitpack.io/#MTVehicles/MinetopiaVehicles
+- See the JitPack page for more information: [https://jitpack.io/#MTVehicles/MinetopiaVehicles](https://jitpack.io/#MTVehicles/MinetopiaVehicles)
 
 ### Maven
 
@@ -37,6 +37,8 @@ dependencies {
     implementation 'com.github.MTVehicles:MinetopiaVehicles:2.5.7'
 }
 ```
+
+<br>
 
 
 ::: warning Wait!
