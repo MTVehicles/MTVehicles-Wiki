@@ -1,12 +1,49 @@
 # Use MTV in your plugin
 
-## Maven
+## Adding as a dependency
 
-::: warning SORRY :(
-We currently do not offer adding MTVehicles as a dependency from a remote repository.
+- You can use **JitPack** to add MTVehicles as a dependency to your project.
+- See the JitPack page for more information: https://jitpack.io/#MTVehicles/MinetopiaVehicles
+
+### Maven
+
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
+<dependency>
+    <groupId>com.github.MTVehicles</groupId>
+    <artifactId>MinetopiaVehicles</artifactId>
+    <version>2.5.7</version>
+</dependency>
+```
+
+### Gradle
+
+```gradle
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+dependencies {
+    implementation 'com.github.MTVehicles:MinetopiaVehicles:2.5.7'
+}
+```
+
+
+::: warning Wait!
+JitPack releases are only available as of 2.5.7 – if you want to use an older version, you have to use the system scope.
 :::
 
-In its stead, you may move MTVehicles to a separate folder and add it with the `system scope`.
+Here is an example of a `system scope` implementation in Maven:
 
 ```xml
 <dependency>
