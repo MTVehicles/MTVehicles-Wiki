@@ -5,6 +5,8 @@
 - You can use **JitPack** to add MTVehicles as a dependency to your project.
 - See the JitPack page for more information: [https://jitpack.io/#MTVehicles/MinetopiaVehicles](https://jitpack.io/#MTVehicles/MinetopiaVehicles)
 
+[![](https://jitpack.io/v/MTVehicles/MinetopiaVehicles.svg)](https://jitpack.io/#MTVehicles/MinetopiaVehicles)
+
 ### Maven
 
 ```xml
