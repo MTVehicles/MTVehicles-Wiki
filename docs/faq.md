@@ -56,20 +56,21 @@ Firstly, **check your console** and look for **this message** (time/version may 
 > And if you're attentive, you should have already seen this warning:<br>
 > ![Incompatible version](https://user-images.githubusercontent.com/47473562/161582673-4802aff9-6e82-41fc-85e3-9f187f760e19.png)
 
-This means you're using an **incompatible Minecraft version**. We always support the **latest patch versions**, except 1.14.x:
+This means you're using an **incompatible Minecraft version**.
 
-| Version(s)        | Compatibility     |   | Version(s)        | Compatibility     |
-|-------------------|-------------------|---|-------------------|-------------------|
-| Older than 1.12   | ❌ Incompatible  |   | 1.16.4            | Not guaranteed    |
-| 1.12-1.12.1       | Not guaranteed    |  | 1.16.5            | ✔️ Compatible    | 
-| 1.12.2            | ✔️ Compatible    |   | 1.17              | Not guaranteed    | 
-| 1.13              | ❌ Incompatible  |   | 1.17.1            | ✔️ Compatible    | 
-| 1.13.1            | Not guaranteed    |   | 1.18-1.18.1      | Not guaranteed    |
-| 1.13.2            | ✔️ Compatible    |    | 1.18.2            | ✔️ Compatible   |
-| 1.14-1.14.4       | ❌ Incompatible  |   | 1.19-1.19.4       |  ✔️ Compatible  |
-| 1.15-1.15.1       | Not guaranteed    |   | 1.20-1.20.1     | ⚠️ Since 2.5.6 |
-| 1.15.2            | ✔️ Compatible    |   | 1.20.2-1.21.4     | ✔️ Compatible  |
-| 1.16-1.16.3       | ❌ Incompatible  |   | 1.21.5           | ⚠️ Since 2.5.6 |
+```
+We support all Spigot/Paper versions from 1.12.2 up to 1.21.10, except these:
+```
+
+| ❌ Incompatible versions   |
+|----------------------------|
+| Older than 1.12            |
+| 1.13                       | 
+| 1.14–1.14.4                | 
+| 1.16–1.16.3                | 
+
+> Latest update: Support for 1.21.9 and 1.21.10 was added in plugin version 2.5.8.
+
 ---
 
 ## ~~6. The vehicles do not move. I am using a compatible version of Paper.~~
