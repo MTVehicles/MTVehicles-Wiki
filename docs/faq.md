@@ -3,33 +3,39 @@
 First of all, you need **a Minecraft server** with Spigot/Paper. (No, plugins do NOT work locally.)
 
 ## 1. How to download and set up the plugin?
-For a step-by-step tutorial, [click here](https://github.com/GamerJoep/MinetopiaVehicles#how-to-download).
+For a step-by-step tutorial, [see the home page](/#how-to-set-up-the-plugin).
 
 ---
 
 ## 2. I can only see diamond hoes!
 You need our **resource pack** to be able to see the vehicles. Download it [here](https://mtvehicles.nl/resourcepack/).
 
-::: warning
-As of version 2.4.0 (The Airplane Update), a new version of resource pack (v0.2) is required!
-:::
-
 ---
 
 ## 3. How to get a vehicle?
-- Execute `/mtv menu` and choose from dozens of vehicles!
+- Choose from a GUI menu using `/mtv menu`
 
   ::: warning
   Permission `mtvehicles.menu` necessary.
   :::
 
-- Execute `/mtv givecar <player> <UUID>`.
+- Use the command `/mtv give <player> <vehicleName>`
 
-  > &lt;player&gt; - Player who must be online when the command is being executed.<br>
-  > &lt;UUID&gt; - UUID of your desired vehicle (can be found in [vehicles.yml](https://github.com/GamerJoep/MinetopiaVehicles/blob/master/src/main/resources/vehicles.yml#L30))
+  > `<player>` - To whom you're giving the vehicle. Must be online. This player will also be set as the vehicle's owner.<br>
+  > `<vehicleName>` - If you're using Minecraft version 1.13+, the command should automatically show you a list of available vehicles (use TAB or scroll).<br><br>
+  > Alternatively, you can also use `/mtv givecar <player> <UUID>`, list of UUIDs can be found in [vehicles.yml](https://github.com/GamerJoep/MinetopiaVehicles/blob/master/src/main/resources/vehicles.yml#L30)), but this approach is not recommended anymore.
   
   ::: warning
   Permission `mtvehicles.givecar` necessary.
+  :::
+
+- Get a voucher using `/mtv give <player> <vehicleName> --voucher:true`
+
+  > Whoever uses the voucher will be the vehicle's owner.<br><br>
+  > You may also use `/mtv givevoucher <player> <UUID>`, list of UUIDs can be found in [vehicles.yml](https://github.com/GamerJoep/MinetopiaVehicles/blob/master/src/main/resources/vehicles.yml#L30)), but this approach is not recommended anymore.
+
+  ::: warning
+  Permission `mtvehicles.givevoucher` necessary to use the command. Afterwards, anyone can use the voucher freely.
   :::
 
 ---
@@ -73,29 +79,52 @@ We support all Spigot/Paper versions from 1.12.2 up to 1.21.10, except these:
 
 ---
 
-## ~~6. The vehicles do not move. I am using a compatible version of Paper.~~
+## 6. I can't buy a vehicle!
 
-~~You need to open the `paper.yml` file and set `armor-stand-tick: true`.~~
+- Use the command `/mtv buy <vehicleName>` to get a vehicle or `/mtv buy <vehicleName> --voucher:true` to get a voucher
 
-Not necessary in the newest plugin version.
+  > `<vehicleName>` - If you're using Minecraft version 1.13+, the command should automatically show you a list of available vehicles (use TAB or scroll).<br><br>
+  > Alternatively, you can also use `/mtv buycar <UUID>` or `/mtv buyvoucher <UUID>`, list of UUIDs can be found in [vehicles.yml](https://github.com/GamerJoep/MinetopiaVehicles/blob/master/src/main/resources/vehicles.yml#L30)), but this approach is not recommended anymore.
+  
+  ::: warning
+  Permission `mtvehicles.buycar` or `mtvehicles.buyvoucher` necessary.
+  :::
+
+- If you still can't buy a vehicle, make sure **Vault** is installed and hooked correctly.
+
+  ::: tip
+  Use the `/mtv vault` command. Permission `mtvehicles.admin` is necessary.
+  :::
+
+
+If your Economy plugin is not hooked correctly – use `/mtv vault setup`. The plugin will try to find it again.
+
+<img width="560" height="43" alt="image" src="https://github.com/user-attachments/assets/60d8c6ba-e60a-4368-b97f-f1151aae3ac7" />
+
+If this still doesn't work, make sure your Economy plugin is hooked correctly with Vault using `/vault-info`:
+
+<img width="386" height="40" alt="image" src="https://github.com/user-attachments/assets/7f2bcc2f-410b-4e7b-931d-9385169ea949" />
+
 
 ---
 
 ## 7. I've got lags. Is the plugin too demanding?
 In case you're using Aternos, then you're probably right. As their servers are free, they might not be "beefy enough".
 
-If you have your own server, try **allocating more RAM**.
+If you have your own server, try allocating more RAM or upgrading your CPU.
+
+> We're constantly trying to optimize the plugin. Make sure you're using the latest plugin version.
 
 ---
 
 ## 8. How to create a vehicle shop?
 We do not offer such a feature, however, you can achieve the same goal by installing any shop plugin out there.
 
-- If you want to use **commands**, use `/mtv givecar <player> <UUID>`. (Explained [here](#_3-how-to-get-a-vehicle).)
-- In case you need to use **items**, use **vouchers** - `/mtv givevoucher <player> <UUID>`. (Works exactly the same as /mtv givecar.)
+- If you want to use **commands**, use `/mtv give <player> <vehicleName>`. (Explained [here](#_3-how-to-get-a-vehicle).)
+- In case you need to use **items**, use **vouchers** - `/mtv give <player> <vehicleName> --voucher:true`.
 
   ::: warning
-  You should NOT sell cars which you get from `/mtv menu`. They already have an owner (and other properties you'd have to edit) set.
+  You should NOT sell cars which you get from `/mtv menu`. They already have an owner (and other properties you'd have to edit) assigned to them.
   :::
 
 ---
@@ -143,10 +172,10 @@ Boats need to be in at least 2-block-deep water to move. (This means you can't o
 
 ---
 
-## 14. The vehicle is removed from the data, how to remove up?
+## 14. The vehicle is removed from the data, how to remove it?
 
 ![image](https://github.com/GamerJoep/MTVehicles-Wiki/assets/52205375/6e01f2b0-d2f0-4a05-9a42-0bb416846787)
 
-This will delete all armorstands in the raduis of `3`. Make sure you stand in the middle of the vehicle or change the radius.
-- In Minecraft version 1.12.2 use `/kill @e[type=ArmorStand,r=3]`
-- Versions above 1.12.2 use  `/minecraft:kill @e[type=armor_stand,distance=..3]`
+This will delete all armor stands in the radius of `3`. Make sure you stand in the middle of the vehicle or change the radius.
+- For Minecraft version 1.12.2, use `/kill @e[type=ArmorStand,r=3]`
+- For versions 1.13+, use  `/minecraft:kill @e[type=armor_stand,distance=..3]`
